@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8239D04E-2B58-4410-93D0-67399D9BF635}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone carro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreencherAnoCB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VPesquisaVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VPesquisaVeiculos.Designer.cs">
+      <DependentUpon>VPesquisaVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VPessoaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VPessoaCadastro.Designer.cs">
+      <DependentUpon>VPessoaCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VPessoaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VPessoaEditar.Designer.cs">
+      <DependentUpon>VPessoaEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VPessoaPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VPessoaPesquisa.Designer.cs">
+      <DependentUpon>VPessoaPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VVeiculoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VVeiculoCadastro.Designer.cs">
+      <DependentUpon>VVeiculoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VVeiculoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VVeiculoEditar.Designer.cs">
+      <DependentUpon>VVeiculoEditar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VPesquisaVeiculos.resx">
+      <DependentUpon>VPesquisaVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VPessoaCadastro.resx">
+      <DependentUpon>VPessoaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VPessoaEditar.resx">
+      <DependentUpon>VPessoaEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VPessoaPesquisa.resx">
+      <DependentUpon>VPessoaPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VVeiculoCadastro.resx">
+      <DependentUpon>VVeiculoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VVeiculoEditar.resx">
+      <DependentUpon>VVeiculoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Model.MPessoa.datasource" />
+    <None Include="Properties\DataSources\Model.MVeiculo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{4858d5f7-702a-4ec9-a0b7-d8cdc86a6b1a}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3698d679-2501-4a67-9be1-2d740415d2fa}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486504337-car-transportation-transport-travel-vehicle_81301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veiculoTransparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_2312.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_man_usersearch_thesearch_theclient_2356.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisaCarro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdicionarCarro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veiculoTransparente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sair-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalvarColorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-editar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sair-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancelar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editfind_103400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_locate_find_icon-icons.com_67287.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editarPreto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PesquisarPequeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excluir Pequeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelPreto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalvarPreto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelPreto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sairpreto48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelpreto48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvarpreto48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpa48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpa32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone carro.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
